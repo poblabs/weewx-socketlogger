@@ -7,7 +7,7 @@ My specific use case to make this drive is that I own the Ambient Weather WS-120
 For the writeup on how I'm using this driver with the weather station data iptables redirect and a socket server, check it out here on my blog: http://obrienlabs.net/redirecting-weather-station-data-from-the-ambient-weather-ws-1200-ip-observerip/
 
 This driver requires:
-- Installing a socket server (ncat is what I used)
+- A socket server (ncat is what I used)
 
 ## Install
 - Copy the socketlogger.py driver to the `bin/user` folder (For my CentOS install it's located at `/usr/share/weewx/user`)
@@ -17,6 +17,9 @@ This driver requires:
 
 ## Version
 1.0 - Initial
+
+## Troubleshooting
+- In the driver contains many commented log points as `loginf()`. Uncomment one, restart weewx and keep an eye on the log file to see if it can offer insight on what's wrong. 
 
 ## Warranty
 
