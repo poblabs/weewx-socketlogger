@@ -4,7 +4,7 @@ Inspired from the hackulink driver, which was based on the weewx wmr100 driver, 
 
 My specific use case to make this drive is that I own the Ambient Weather WS-1200-IP and there is no way to redirect the weather data to your own server. So I came up with a TCP iptables redirect that gets the data into weewx using PHP and ncat as a socket server. Once weewx has the data, then you can have weewx update CWOP, PWSWeather, WeatherBug and more. 
 
-For the writeup on how I'm using this driver with the weather station data iptables redirect and a socket server, check it out here on my blog: http://obrienlabs.net/redirecting-weather-station-data-from-the-ambient-weather-ws-1200-ip-observerip/
+For the writeup on how I'm using this driver with the weather station data iptables redirect and a socket server, check it out here on my blog: http://obrienlabs.net/redirecting-weather-station-data-from-the-ambient-weather-observerip/
 
 This driver requires:
 - A socket server (ncat is what I used)
