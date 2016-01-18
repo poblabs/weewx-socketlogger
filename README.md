@@ -19,7 +19,7 @@ This driver requires:
 1.0 - Initial
 
 ## Troubleshooting
-- In the driver contains many commented log points as `loginf()`. Uncomment one, restart weewx and keep an eye on the log file to see if it can offer insight on what's wrong. 
+- The driver contains many commented log points as `loginf()`. Uncomment one, restart weewx and keep an eye on the log file to see if it can offer insight on what's wrong. 
 
 ## Warranty
 
