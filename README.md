@@ -12,7 +12,8 @@ This driver requires:
 ## Install
 - Copy the socketlogger.py driver to the `bin/user` folder (For my CentOS install it's located at `/usr/share/weewx/user`)
 - Copy the text blurb from the `weewx.conf` here to your `weewx.conf`
-- Modify the configuration in `weewx.conf` to update the IP and hardware description
+- Modify the configuration in `weewx.conf` to update the IP and port information for the socket server.
+- Also update the hardware description
 - Restart weewx
 
 ## Version
