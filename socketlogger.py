@@ -110,15 +110,17 @@ class SocketLogger(weewx.drivers.AbstractDevice):
                 raise weewx.WeeWxIOError(ex)
             if _line == None:
                 break
-            else:
-            #if _line[0:8] == 'outTemp=':
-                #loginf("New data received on socket.")
+            if _line[0:8] == 'outTemp=':
+                #loginf("New line on socket, processing weather data.")
                 yield self._process_message(_line)
+            else:
+                #loginf("New line on socket, but did not start with 'outTemp='. Ignoring line.")
+                pass
     
     def _process_message(self, message):
         _packet = {}
 
-        #separate line into a dict
+        # Separate line into a dict
         message = message.rstrip() # Strip any newline
         line = message.split(',') # Split by comma
         data = dict( [ i.split( '=' ) for i in line] ) # Create dictionary of the values
