@@ -11,7 +11,7 @@ This driver requires:
   - If you don't want to use ncat, the Python socket library could be hooked in pretty easily I would think. However, this would make the socket available only when weewx is running. This may not be ideal for all situations. 
 
 ## Install
-- Copy the socketlogger.py driver to the `bin/user` folder (For my CentOS install it's located at `/usr/share/weewx/user`)
+- Copy the socketlogger.py driver to the `bin/user` folder (On CentOS and Ubuntu install it's located at `/usr/share/weewx/user`)
 - Copy the text snippet from the `weewx.conf` in this repo to your `weewx.conf`
 - Modify the configuration in `weewx.conf` to update the IP and port information for the socket server, also update the hardware description if needed
 - Restart weewx
